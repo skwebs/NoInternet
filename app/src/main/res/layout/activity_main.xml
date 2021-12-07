@@ -5,38 +5,89 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/check_wifi_permission_btn"
+        android:text="@string/check_wifi_permission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/toggle_wifi_btn"
+        android:text="@string/toggle_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100sp"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        android:textSize="30sp" />
+
     <RelativeLayout
         android:id="@+id/internet_layout"
-        android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_alignParentStart="true"
-    android:layout_alignParentTop="true"
-    android:background="#296A00"
-    android:visibility="gone">
-    <TextView
+        android:background="#296A00"
+        android:visibility="visible"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:text="@string/c"
-        android:textColor="#FFFFFF"
-        android:textSize="34sp" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:text="@string/c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/disable_wifi_btn"
+            android:text="@string/disable_wifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="50sp"
+            android:layout_marginRight="50sp"
+            android:textSize="30sp"/>
     </RelativeLayout>
     <RelativeLayout
         android:id="@+id/no_internet_layout"
+        android:background="#850000"
+        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:background="#850000"
-        android:visibility="visible">
+        android:layout_alignParentTop="true">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
             android:text="@string/n"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
             android:textColor="#FFFFFF"
             android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/enable_wifi_btn"
+            android:text="@string/enable_wifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="50sp"
+            android:layout_marginRight="50sp"
+            android:textSize="30sp"/>
 
     </RelativeLayout>
 

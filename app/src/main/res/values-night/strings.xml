@@ -2,4 +2,8 @@
     <string name="app_name">No Internet</string>
     <string name="c">Connected</string>
     <string name="n">Not connected.</string>
+    <string name="enable_wifi">Enable WiFi</string>
+    <string name="disable_wifi">Disable WiFi</string>
+    <string name="check_wifi_permission">Check WiFi Permission</string>
+    <string name="toggle_wifi">Toggle WiFi</string>
 </resources>
